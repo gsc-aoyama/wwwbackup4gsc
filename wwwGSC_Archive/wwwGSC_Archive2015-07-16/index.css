@@ -1,0 +1,199 @@
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/themes/gsc-theme/style.css ::::: */
+
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/themes/gsc-theme/common/css/initialize.css ::::: */
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, table, caption, th, td { margin: 0px; padding: 0px; font-weight: normal; font-size: 100%; }
+fieldset, img { border: 0px none; vertical-align: top; }
+li { list-style: outside none none; }
+a { outline: medium none; }
+html { overflow-y: scroll; }
+a:link { color: rgb(0, 52, 92); text-decoration: none; }
+a:visited { color: rgb(0, 52, 92); text-decoration: none; }
+a:hover { color: rgb(0, 52, 92); text-decoration: underline; }
+a:active { color: rgb(196, 88, 0); }
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/themes/gsc-theme/common/css/modules.css ::::: */
+
+#Wrapper .columnSplit2Float::after { clear: both; content: "."; display: block; height: 0px; visibility: hidden; }
+#Wrapper dl { margin-bottom: 20px; }
+#Wrapper dt { margin-bottom: 0.5em; font-weight: bold; }
+#Wrapper dd { margin-left: 1.2em; margin-top: 0.5em; margin-bottom: 1em; }
+#Wrapper img {  }
+#Wrapper .clr { clear: both; }
+#Wrapper .clearFix::after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+#Wrapper .clearFix { display: inline-block; min-height: 1%; }
+#Wrapper .clearFix { display: block; }
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/themes/gsc-theme/common/css/layout.css ::::: */
+
+body { clear: both; font-size: 0.81em; font-family: "メイリオ","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Arial,"ＭＳ Ｐゴシック","MS PGothic",sans-serif; text-align: center; }
+#Wrapper {  }
+#Wrapper #WrapperInner { background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+header { margin: 0px auto; background: rgb(255, 255, 255) url('navutility_bg.gif') repeat-x scroll left top; }
+#headerInner { margin: 0px; padding: 0px; border-bottom: 1px solid rgb(221, 221, 221); }
+#headerTSub { margin: 0px auto -40px; width: 960px; height: 30px; padding-top: 10px; text-align: left; z-index: 1000; position: relative; }
+#headerTNavTarget { width: 240px; float: right; position: absolute; z-index: 1000; right: 0px; }
+#headerTNavTarget ul { margin: 0px; padding: 0px; list-style: outside none none; }
+#headerTNavTarget li { display: block; overflow: hidden; text-indent: -9999px; float: left; height: 30px; }
+#headerTNavTarget li a { display: block; background-image: url('topnavtarget.png'); background-repeat: no-repeat; overflow: hidden; margin: 0px; padding: 0px; height: 30px; }
+#headerTNavTarget li.nav-english a { background-position: -437px 0px; width: 80px; }
+#headerTNavTarget li.nav-inquiry a { background-position: -517px 0px; width: 150px; margin-left: 10px; }
+#headerTNavTarget li.nav-english a.active, #headerTNavTarget li.nav-english a:hover { background-position: -437px -30px; }
+#headerTNavTarget li.nav-inquiry a.active, #headerTNavTarget li.nav-inquiry a:hover { background-position: -517px -30px; }
+#NavSearch { text-align: center; height: 17px; clear: left; margin: 10px 0px; }
+#NavSearch img { margin-top: 3px; float: left; }
+#headerTMain, #headerMain { margin: 0px auto; width: 960px; height: 80px; background-color: rgb(255, 255, 255); text-align: left; }
+#headerSlide { margin: 0px auto; padding: 0px; width: 100%; background-color: rgb(0, 102, 102); overflow: hidden; position: relative; }
+#headerMenuButton { display: none; }
+#headerLogo { width: 240px; float: left; }
+#headerLogo h1 { margin: 0px; padding: 18px 0px 0px; }
+#headerNavGlobal { width: 720px; float: right; }
+#headerNavGlobal ul { margin: 0px; padding: 0px; list-style: outside none none; }
+#headerNavGlobal li { display: block; overflow: hidden; text-indent: -9999px; float: left; height: 80px; }
+#headerNavGlobal li a { display: block; height: 80px; background-image: url('navglobal.gif'); background-repeat: no-repeat; overflow: hidden; margin: 0px; padding: 0px; width: 144px; }
+#headerNavGlobal li.nav-intro a { background-position: 0px 0px; }
+#headerNavGlobal li.nav-exam a { background-position: -144px 0px; }
+#headerNavGlobal li.nav-teacher a { background-position: -288px 0px; }
+#headerNavGlobal li.nav-campus a { background-position: -432px 0px; }
+#headerNavGlobal li.nav-career a { background-position: -576px 0px; }
+#headerNavGlobal li.nav-intro a.active, #headerNavGlobal li.nav-intro a:hover { background-position: 0px -80px; }
+#headerNavGlobal li.nav-exam a.active, #headerNavGlobal li.nav-exam a:hover { background-position: -144px -80px; }
+#headerNavGlobal li.nav-teacher a.active, #headerNavGlobal li.nav-teacher a:hover { background-position: -288px -80px; }
+#headerNavGlobal li.nav-campus a.active, #headerNavGlobal li.nav-campus a:hover { background-position: -432px -80px; }
+#headerNavGlobal li.nav-career a.active, #headerNavGlobal li.nav-career a:hover { background-position: -576px -80px; }
+#headerNavGlobal-sp { display: none; }
+#Contents { background-color: rgb(255, 255, 255); }
+#Contents #ContentsInner { margin: 0px auto; padding-top: 15px; width: 960px; background-color: rgb(255, 255, 255); text-align: left; }
+#Contents #ContentsInner #articleHome { width: 630px; float: right; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+#Contents #ContentsInner #articleHome h2 { height: 50px; border-bottom: 5px solid rgb(0, 147, 129); }
+#Contents #ContentsInner #articleHome h2 img { padding-top: 4px; }
+#Contents #ContentsInner #articleHome ul { display: block; width: 650px; margin-left: 0px ! important; padding-left: 0px ! important; overflow: hidden; }
+#Contents #ContentsInner #articleHome ul li { display: block; float: left; margin: 20px 20px 0px 0px; position: relative; width: 305px; }
+#Contents #ContentsInner #articleHome ul strong { position: absolute; left: 0px; bottom: 0px; background: transparent url('pickup_bg.png') repeat-x scroll left top; display: inline-block ! important; width: 100% ! important; height: auto ! important; color: rgb(255, 255, 255); }
+#Contents #ContentsInner #articleHome ul strong span { padding: 5px; display: block; }
+#Contents #ContentsInner #articleHome h2 { clear: both; background-color: rgb(255, 255, 255); border-top: medium none; border-bottom: 5px solid rgb(0, 147, 129); padding: 0px; margin-top: 0px; margin-bottom: 5px; }
+#Contents #ContentsInner article { width: 720px; padding-top: 15px; float: right; background: rgb(255, 255, 255) none repeat scroll 0% 0%; overflow: hidden; }
+#Contents #ContentsInner article h2 { clear: both; background-color: rgb(10, 151, 134); border-top: 1px solid rgb(7, 114, 101); padding: 10px 20px; margin-top: 30px; margin-bottom: 5px; color: rgb(255, 255, 255); font-size: 140%; font-weight: bold; }
+#Contents #ContentsInner article ul { padding-top: 1.5em; padding-left: 1em; margin-left: 1em; list-style-type: disc; }
+#Contents #ContentsInner article ul li { list-style-type: disc; }
+#Contents #ContentsInner aside { width: 210px; padding-top: 15px; margin-right: 30px; float: left; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+#Contents #ContentsInner #asideHome { width: 310px; margin-right: 20px; float: left; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+footer { margin-top: 30px; }
+footer #footerInner { border-top: 3px solid rgb(231, 231, 231); }
+#footerInner #NavFooter { background-color: rgb(242, 242, 242); padding: 30px 0px; margin-bottom: 30px; text-align: center; }
+#footerInner #NavFooter ul {  }
+#footerInner #NavFooter ul li { display: inline; border-right: 1px solid rgb(73, 73, 73); padding-right: 14px; margin-right: 15px; }
+#footerInner #NavFooter ul li.last { border-right: medium none; padding-right: 0px; margin-right: 0px; }
+#footerInner #NavFooter ul li a { color: rgb(17, 17, 17); font-size: 93%; }
+#footerInner #NavFooter #address { margin-top: 30px; line-height: 1.4; }
+#footerInner #NavUniv { margin: 30px auto 0px; display: table; }
+#footerInner #NavUniv li { display: table-cell; text-align: center; vertical-align: middle; }
+#footerInner #NavUniv a { margin: 0px 30px; }
+#pageTop { bottom: 15px; position: fixed; right: 15px; z-index: 9000; }
+#TabNews ul { margin: 0px; padding: 0px; height: 50px; list-style: outside none none; border-bottom: 5px solid rgb(0, 147, 129); }
+#TabNews ul li { display: block; overflow: hidden; text-indent: -9999px; float: left; height: 27px; }
+#TabNews ul li a { display: block; height: 27px; background-image: url('tabnews.gif'); background-repeat: no-repeat; background-size: 300px 54px; overflow: hidden; margin: 0px; padding: 0px; }
+#TabNews ul li.tab-news a { background-position: 0px 0px; width: 141px; }
+#TabNews ul li.tab-topics a { background-position: -141px 0px; width: 159px; }
+#TabNews ul li.tab-news a.active, #TabNews ul li.tab-news a:hover, #TabNews ul li.tab-news a.select { background-position: 0px -27px; }
+#TabNews ul li.tab-topics a.active, #TabNews ul li.tab-topics a:hover, #TabNews ul li.tab-topics a.select { background-position: -141px -27px; }
+#news-department, #news-topics { clear: both; height: auto; margin-top: 20px; overflow: auto; }
+#news-department dl, #news-topics dl { clear: both; height: 450px; margin-top: 20px; margin-bottom: 10px; overflow: auto; }
+#news-department dt, #news-topics dt { display: block; float: left; margin-left: 2px; width: 8em; font-weight: normal; }
+#news-department dd, #news-topics dd { background: transparent url('com_border_news.gif') repeat-x scroll left bottom; margin: 0px 5px 20px 0px; padding: 0px 5px 20px 8.5em; }
+#news-department dd a, #news-topics dd a { color: rgb(0, 146, 128); }
+#news-department ul, #news-topics ul { border-bottom: medium none; border-top: 2px solid rgb(239, 239, 239); padding-top: 10px; height: auto; }
+#news-department ul li, #news-topics ul li { display: block; text-indent: 0px; float: left; margin-right: 20px; }
+#news-department ul li a, #news-topics ul li a { height: auto; color: rgb(17, 17, 17); }
+#news-department ul li.rss a, #news-topics ul li.rss a { background: transparent url('com_ico_rss.gif') no-repeat scroll left center; padding-left: 20px; }
+#news-department ul li.list a, #news-topics ul li.list a { background: transparent url('com_ico_list.gif') no-repeat scroll left center; padding-left: 20px; }
+#Contents #ContentsInner article h2 { background-color: rgb(0, 147, 129); border-top: 1px solid rgb(0, 147, 129); }
+:focus { outline: medium none; }
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/themes/gsc-theme/common/css/responsive.css ::::: */
+
+@media screen and (max-width: 600px) {
+	#headerInner { border-bottom: medium none; }
+	#headerTSub { display: none ! important; }
+	#headerSlide img { width: 100%; }
+	#headerTMain { width: 100%; }
+	#headerLogo { width: 100%; text-align: center; }
+	#headerNavGlobal { display: none ! important; }
+	#headerNavGlobal-sp { display: block; margin: 0px 10px 20px; background-color: rgb(0, 147, 129); padding: 5px; }
+	#headerNavGlobal-sp ul { border: 1px solid rgb(255, 255, 255); }
+	#headerNavGlobal-sp ul li a { text-align: center; display: table-cell; box-sizing: border-box; width: 50%; padding: 20px 0px; vertical-align: middle; float: left; border: 1px solid rgb(255, 255, 255); }
+	#Contents { padding: 0px 10px; }
+	#Contents #ContentsInner { width: 100%; padding-top: 0px; }
+	#Contents #ContentsInner #articleHome { float: none ! important; width: 100%; }
+	#Contents #ContentsInner #articleHome h2 { height: 40px; }
+	#Contents #ContentsInner #articleHome ul { width: 100%; }
+	#Contents #ContentsInner #articleHome ul li { margin: 5px 0px; padding: 0px; width: 50%; box-sizing: border-box; }
+	#Contents #ContentsInner #articleHome ul li img { width: 100%; height: auto; }
+	#Contents #ContentsInner #asideHome { float: none ! important; width: 100%; }
+	#Contents #ContentsInner aside #TabNews { margin-top: 20px; }
+	#news-department, #news-topics { height: auto; }
+	#news-department dt, #news-topics dt { float: none; margin-left: 0px; width: 100%; }
+	#news-department dd, #news-topics dd { margin: 0px 5px 20px 0px; padding: 0px 5px 20px 0px; }
+	#NavSearch { display: none ! important; }
+	#footerInner #NavFooter ul li a { font-size: 80%; }
+	#NavUniv { width: 100%; }
+	#NavUniv li { padding: 15px; }
+	#NavUniv li a { margin: 0px ! important; }
+	#NavUniv li img { width: 100%; }
+	#headerMenuButton { display: block; width: 50px; margin-top: 10px; padding-right: 10px; float: right; }
+	#headerMenuButton { position: absolute; z-index: 1000; right: 0px; }
+	#Contents #ContentsInner article { width: 100%; padding-top: 0px; }
+	#Contents #ContentsInner aside { width: 100%; }
+	#pageTop img { width: 30px; }
+}
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/themes/gsc-theme/common/css/jquery.sidr.dark.css ::::: */
+
+.sidr { display: none; position: fixed; top: 0px; height: 100%; z-index: 999999; width: 260px; overflow-y: auto; font-family: "lucida grande",tahoma,verdana,arial,sans-serif; font-size: 15px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; color: rgb(255, 255, 255); box-shadow: 0px 0px 5px 5px rgb(34, 34, 34) inset; }
+.sidr.right { left: auto; right: -260px; }
+.sidr ul { display: block; margin: 0px 0px 15px; padding: 0px; border-top: 1px solid rgb(26, 26, 26); border-bottom: 1px solid rgb(77, 77, 77); text-align: left; font-size: 80%; }
+.sidr ul li { display: block; margin: 0px; line-height: 48px; border-top: 1px solid rgb(77, 77, 77); border-bottom: 1px solid rgb(26, 26, 26); }
+.sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active { border-top: medium none; line-height: 49px; }
+.sidr ul li:hover > a, .sidr ul li:hover > span, .sidr ul li.active > a, .sidr ul li.active > span, .sidr ul li.sidr-class-active > a, .sidr ul li.sidr-class-active > span { box-shadow: 0px 0px 15px 3px rgb(34, 34, 34) inset; }
+.sidr ul li a, .sidr ul li span { padding: 0px 15px; display: block; text-decoration: none; color: rgb(255, 255, 255); }
+#sidr { display: none; }
+.slides li {  }
+@media screen and (max-width: 600px) {
+}
+.disnon { display: none; }
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/plugins/ml-slider/assets/sliders/flexslider/flexslider.css?ver=3.3.2 ::::: */
+
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus { outline: medium none; }
+.slides, .flex-control-nav, .flex-direction-nav { margin: 0px; padding: 0px; list-style: outside none none; }
+.flexslider { margin: 0px; padding: 0px; }
+.flexslider .slides img { width: 100%; display: block; }
+.slides::after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0px; }
+.flexslider { margin: 0px 0px 60px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 4px solid rgb(255, 255, 255); position: relative; border-radius: 4px; box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2); }
+.flexslider .slides {  }
+.flex-direction-nav {  }
+.flex-direction-nav a { width: 42px; height: 43px; margin: -20px 0px 0px; display: block; background: transparent url('bg_direction_nav.png') no-repeat scroll 0px 0px; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; }
+.flex-direction-nav .flex-next { background-position: 100% 0px; right: -36px; }
+.flex-direction-nav .flex-prev { left: -36px; }
+.flexslider:hover .flex-next { opacity: 0.8; right: 5px; }
+.flexslider:hover .flex-prev { opacity: 0.8; left: 5px; }
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
+.flex-control-nav { width: 100%; position: absolute; bottom: -40px; text-align: center; }
+.flex-control-nav li { margin: 0px 6px; display: inline-block; }
+.flex-control-paging li a { width: 11px; height: 11px; display: block; background: rgba(255, 255, 255, 0.5) none repeat scroll 0% 0%; cursor: pointer; text-indent: -9999px; border-radius: 20px; box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3) inset; }
+.flex-control-paging li a:hover { background: rgba(255, 255, 255, 0.7) none repeat scroll 0% 0%; }
+.flex-control-paging li a.flex-active { background: rgba(255, 255, 255, 0.9) none repeat scroll 0% 0%; cursor: default; }
+@media screen and (max-width: 860px) {
+	.flex-direction-nav .flex-prev { opacity: 1; left: 0px; }
+	.flex-direction-nav .flex-next { opacity: 1; right: 0px; }
+}
+.metaslider .flexslider { background: transparent none repeat scroll 0% 0%; box-shadow: none; border: 0px none; margin: 0px; max-width: none; max-height: none; }
+.flex-control-nav { bottom: 10px; line-height: 11px; z-index: 9999; }
+.flex-control-nav li { margin: 0px; }
+.flex-control-nav li a { margin: 0px 6px; padding: 0px; }
+.flexslider .slides li { position: relative; height: auto; }
+.flex-direction-nav a { transition: all 0.3s ease 0s; }
+.flex-control-nav { margin: auto; }
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/plugins/ml-slider/assets/metaslider/public.css?ver=3.3.2 ::::: */
+
+.metaslider { position: relative; z-index: 0; }
+.metaslider img { height: auto; padding: 0px; margin: 0px; -moz-user-select: none; }
+.metaslider a { outline: medium none; }
+.metaslider li::before, .metaslider li::after { content: "" ! important; display: none ! important; bottom: auto ! important; margin: 0px ! important; }
+.article .metaslider ul, .article .metaslider ol, .article .metaslider li, .article .metaslider img, .art-article .metaslider ul, .art-article .metaslider ol, .art-article .metaslider li, .art-article .metaslider img, #widgets .metaslider ul, #widgets .metaslider ol, #widgets .metaslider li, #widgets .metaslider img, .entry .metaslider ul, .entry .metaslider ol, .entry .metaslider li, .entry .metaslider img, #content .metaslider ul, #content .metaslider ol, #content .metaslider li, #content .metaslider img, .entry-content .metaslider ul, .entry-content .metaslider ol, .entry-content .metaslider li, .entry-content .metaslider img, .metaslider .flexslider ul, .metaslider .flexslider .slides li, .metaslider .flexslider .slides ul, .metaslider .flexslider .slides ol, .metaslider .flexslider .flex-direction-nav, .metaslider .flexslider .flex-direction-nav li, [class*="-article"] .metaslider img { border: 0px none; margin: 0px; list-style: outside none none; padding: 0px; line-height: normal; max-width: none; max-height: none; }
+.metaslider .slides img { width: 100%; display: block; }

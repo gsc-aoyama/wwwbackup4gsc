@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html id="feedHandler" xmlns="http://www.w3.org/1999/xhtml">
+<head xmlns="http://www.w3.org/1999/xhtml">
+<meta content="application/xhtml+xml; charset=UTF-8" http-equiv="Content-Type" />
+
+    <title>フィードを表示しています</title>
+    <link rel="stylesheet" href="chrome://browser/skin/feeds/subscribe.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="chrome://browser/content/feeds/subscribe.css" type="text/css" media="all" />
+    <script type="application/javascript" src="chrome://browser/content/feeds/subscribe.js"></script>
+  </head>
+<body xmlns="http://www.w3.org/1999/xhtml" onload="SubscribeHandler.writeContent();" onunload="SubscribeHandler.uninit();">
+    <div id="feedHeaderContainer">
+      <div id="feedHeader" dir="ltr" class="feedBackground" firstrun="true">
+        <div id="feedIntroText">
+          <p id="feedSubscriptionInfo1">このサイトで頻繁に更新されるコンテンツの「フィード」です。</p>
+          <p id="feedSubscriptionInfo2">フィードを「購読」すると常にその最新版を自動的に受信できるようになります。</p>
+        </div>
+        <div id="feedSubscribeLine"></div>
+      </div>
+    </div>
+
+    <script type="application/javascript">
+      SubscribeHandler.init();
+    </script>
+
+    <div id="feedBody">
+      <div id="feedTitle">
+        <a id="feedTitleLink">
+          <img id="feedTitleImage" />
+        </a>
+        <div id="feedTitleContainer">
+          <h1 id="feedTitleText"></h1>
+          <h2 id="feedSubtitleText"></h2>
+        </div>
+      </div>
+      <div id="feedContent"></div>
+    </div>
+  </body>
+</html>

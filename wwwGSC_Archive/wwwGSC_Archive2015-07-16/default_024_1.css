@@ -1,0 +1,30 @@
+/* ::::: https://a.tiles.mapbox.com/v4/embed/mapbox.js/mapbox.css ::::: */
+
+.leaflet-container *, .leaflet-container *::after, .leaflet-container *::before { box-sizing: border-box; }
+.leaflet-control-attribution.leaflet-compact-attribution::after { content: ""; background-color: rgba(255, 255, 255, 0.5); background-position: 0px -78px; border-radius: 50%; position: absolute; display: inline-block; width: 26px; height: 26px; vertical-align: middle; bottom: 0px; z-index: 1; visibility: visible; cursor: pointer; }
+.leaflet-control-attribution.leaflet-compact-attribution:hover::after { background-color: rgb(255, 255, 255); }
+.leaflet-right .leaflet-control-attribution.leaflet-compact-attribution::after { right: 0px; }
+.leaflet-left .leaflet-control-attribution.leaflet-compact-attribution::after { left: 0px; }
+.leaflet-control-scale-line:not(:first-child) { border-top: 2px solid rgba(0, 0, 0, 0.1); border-bottom: medium none; margin-top: -2px; }
+.leaflet-control-scale-line:not(:first-child):not(:last-child) { border-bottom: 2px solid rgb(119, 119, 119); }
+.leaflet-bar a, .mapbox-icon, .map-tooltip.closable .close, .leaflet-control-layers-toggle, .leaflet-popup-close-button, .mapbox-button-icon::before { content: ""; display: inline-block; width: 26px; height: 26px; vertical-align: middle; background-repeat: no-repeat; }
+.leaflet-control-attribution::after, .leaflet-control-zoom-in, .leaflet-control-zoom-out, .leaflet-popup-close-button, .leaflet-control-layers-toggle, .leaflet-container.dark .map-tooltip .close, .map-tooltip .close, .mapbox-icon { opacity: 0.75; background-image: url('icons-000000@2x.png'); background-repeat: no-repeat; background-size: 26px 260px; }
+.leaflet-container.dark .leaflet-control-attribution::after, .mapbox-button-icon::before, .leaflet-container.dark .leaflet-control-zoom-in, .leaflet-container.dark .leaflet-control-zoom-out, .leaflet-container.dark .leaflet-control-layers-toggle, .leaflet-container.dark .mapbox-icon { opacity: 1; background-image: url('icons-ffffff@2x.png'); background-size: 26px 260px; }
+.mapbox-icon.mapbox-icon-share::before, .mapbox-icon.mapbox-icon-share { background-position: 0px -130px; }
+.mapbox-icon.mapbox-icon-geocoder::before, .mapbox-icon.mapbox-icon-geocoder { background-position: 0px -156px; }
+.mapbox-icon-facebook::before, .mapbox-icon-facebook { background-position: 0px -182px; }
+.mapbox-icon-twitter::before, .mapbox-icon-twitter { background-position: 0px -208px; }
+.mapbox-icon-pinterest::before, .mapbox-icon-pinterest { background-position: 0px -234px; }
+.mapbox-logo-true::before { content: ""; display: inline-block; width: 61px; height: 19px; vertical-align: middle; }
+.leaflet-container.dark .leaflet-control-attribution::after, .leaflet-container.dark .mapbox-info-toggle, .leaflet-container.dark .map-info-container, .leaflet-container.dark .leaflet-control-attribution { background-color: rgba(0, 0, 0, 0.5); color: rgb(248, 248, 248); }
+.leaflet-container.dark .leaflet-control-attribution:hover::after { background-color: rgb(0, 0, 0); }
+@media only screen and (max-width: 800px) {
+}
+@media only screen and (max-width: 640px) {
+}
+.leaflet-oldie .mapbox-button-icon::before, .leaflet-oldie .leaflet-container.dark .leaflet-control-zoom-in, .leaflet-oldie .leaflet-container.dark .leaflet-control-zoom-out, .leaflet-oldie .leaflet-container.dark .leaflet-control-layers-toggle, .leaflet-oldie .leaflet-container.dark .mapbox-icon { background-image: url('undefined'); }
+/* ::::: https://a.tiles.mapbox.com/v4/embed/embed.css ::::: */
+
+html, body { height: 100%; }
+body { margin: 0px; padding: 0px; }
+.ts-map { height: 100%; position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; }

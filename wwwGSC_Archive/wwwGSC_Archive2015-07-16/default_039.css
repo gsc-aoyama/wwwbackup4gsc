@@ -1,0 +1,188 @@
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70 ::::: */
+
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/plugins/lightbox-plus/css/blackbox/colorbox.min.css?ver=2.7.2 ::::: */
+
+#colorbox, #cboxOverlay, #cboxWrapper { position: absolute; top: 0px; left: 0px; z-index: 99999; overflow: hidden; }
+#cboxOverlay { position: fixed; width: 100%; height: 100%; }
+#cboxMiddleLeft, #cboxBottomLeft { clear: left; }
+#cboxContent { position: relative; }
+#cboxTitle { margin: 0px; }
+#cboxLoadingOverlay, #cboxLoadingGraphic { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; }
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow { cursor: pointer; }
+#colorbox, #cboxContent, #cboxLoadedContent { box-sizing: content-box; }
+#cboxOverlay { background: rgb(0, 0, 0) none repeat scroll 0% 0%; }
+#colorbox { font: 12px Tahoma,Arial,sans-serif; }
+#cboxTopLeft { width: 21px; height: 21px; background: transparent url('controls.png') no-repeat scroll -100px 0px; }
+#cboxTopRight { width: 21px; height: 21px; background: transparent url('controls.png') no-repeat scroll -129px 0px; }
+#cboxBottomLeft { width: 21px; height: 21px; background: transparent url('controls.png') no-repeat scroll -100px -29px; }
+#cboxBottomRight { width: 21px; height: 21px; background: transparent url('controls.png') no-repeat scroll -129px -29px; }
+#cboxMiddleLeft { width: 21px; background: transparent url('controls.png') repeat-y scroll left top; }
+#cboxMiddleRight { width: 21px; background: transparent url('controls.png') repeat-y scroll right top; }
+#cboxTopCenter { height: 21px; background: transparent url('border.png') repeat-x scroll 0px 0px; }
+#cboxBottomCenter { height: 21px; background: transparent url('border.png') repeat-x scroll 0px -29px; }
+#cboxContent { background: rgb(255, 255, 255) none repeat scroll 0% 0%; overflow: hidden; }
+#cboxTitle { position: absolute; bottom: 4px; left: 0px; text-align: center; width: 100%; color: rgb(148, 148, 148); }
+#cboxCurrent { position: absolute; bottom: 4px; left: 58px; color: rgb(148, 148, 148); }
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose { border: 0px none; padding: 0px; margin: 0px; overflow: visible; width: auto; background: transparent none repeat scroll 0px center; }
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active { outline: 0px none; }
+#cboxSlideshow { position: absolute; bottom: 4px; right: 30px; color: rgb(0, 146, 239); }
+#cboxPrevious { position: absolute; bottom: 0px; left: 0px; background: transparent url('controls.png') no-repeat scroll -75px 0px; width: 25px; height: 25px; text-indent: -9999px; }
+#cboxPrevious:hover { background-position: -75px -25px; }
+#cboxNext { position: absolute; bottom: 0px; left: 27px; background: transparent url('controls.png') no-repeat scroll -50px 0px; width: 25px; height: 25px; text-indent: -9999px; }
+#cboxNext:hover { background-position: -50px -25px; }
+#cboxLoadingOverlay { background: transparent url('loading_background.png') no-repeat scroll center center; }
+#cboxLoadingGraphic { background: transparent url('loading.gif') no-repeat scroll center center; }
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/themes/gsc-theme/style.css ::::: */
+
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/themes/gsc-theme/common/css/initialize.css ::::: */
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, table, caption, th, td { margin: 0px; padding: 0px; font-weight: normal; font-size: 100%; }
+table, tr, th, td { border-collapse: collapse; border-spacing: 0px; }
+fieldset, img { border: 0px none; vertical-align: top; }
+li { list-style: outside none none; }
+a { outline: medium none; }
+html { overflow-y: scroll; }
+a:link { color: rgb(0, 52, 92); text-decoration: none; }
+a:visited { color: rgb(0, 52, 92); text-decoration: none; }
+a:hover { color: rgb(0, 52, 92); text-decoration: underline; }
+a:active { color: rgb(196, 88, 0); }
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/themes/gsc-theme/common/css/modules.css ::::: */
+
+#Wrapper .columnSplit2Float::after { clear: both; content: "."; display: block; height: 0px; visibility: hidden; }
+#Wrapper table { margin-top: 20px; margin-bottom: 20px; border: 1px solid rgb(221, 221, 221); }
+#Wrapper table th, #Wrapper table td { border-bottom: 1px solid rgb(221, 221, 221); border-right: 1px solid rgb(221, 221, 221); line-height: 1.4; padding: 6px 10px 5px; text-align: left; }
+#Wrapper table th, #Wrapper table td p, #Wrapper table th, #Wrapper table td ul, #Wrapper table th, #Wrapper table td ol, #Wrapper table th, #Wrapper table td dl, #Wrapper table th, #Wrapper table td div { margin-top: 0px ! important; margin-bottom: 0px ! important; }
+#Wrapper table tbody th { background: rgb(244, 243, 236) none repeat scroll 0% 0%; font-weight: bold; }
+#Wrapper img {  }
+#Wrapper .clr { clear: both; }
+#Wrapper .clearFix::after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+#Wrapper .clearFix { display: inline-block; min-height: 1%; }
+#Wrapper .clearFix { display: block; }
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/themes/gsc-theme/common/css/layout.css ::::: */
+
+body { clear: both; font-size: 0.81em; font-family: "メイリオ","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Arial,"ＭＳ Ｐゴシック","MS PGothic",sans-serif; text-align: center; }
+#Wrapper {  }
+#Wrapper #WrapperInner { background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+header { margin: 0px auto; background: rgb(255, 255, 255) url('navutility_bg.gif') repeat-x scroll left top; }
+#headerInner { margin: 0px; padding: 0px; border-bottom: 1px solid rgb(221, 221, 221); }
+#headerSub { margin: 0px auto; width: 960px; height: 30px; padding-top: 5px; text-align: left; z-index: 1000; position: relative; }
+#headerNavUtility { width: 400px; float: right; }
+#headerNavUtility ul { margin: 0px; padding: 0px; list-style: outside none none; }
+#headerNavUtility li { display: block; overflow: hidden; text-indent: -9999px; float: left; height: 14px; vertical-align: top; }
+#headerNavUtility li a { display: block; background-image: url('navutility.png'); background-repeat: no-repeat; overflow: hidden; margin: 0px; padding: 0px; height: 14px; }
+#headerNavUtility li.nav-access a { background-position: 0px 0px; width: 93px; }
+#headerNavUtility li.nav-sitemap a { background-position: -93px 0px; width: 87px; }
+#headerNavUtility li.nav-inquiry a { background-position: -180px 0px; width: 70px; }
+#headerNavUtility li.nav-contact a { background-position: -250px 0px; width: 93px; }
+#headerNavUtility li.nav-english a { background-position: -343px 0px; width: 57px; }
+#headerNavUtility li.nav-access a.active, #headerNavUtility li.nav-access a:hover { background-position: 0px -14px; }
+#headerNavUtility li.nav-sitemap a.active, #headerNavUtility li.nav-sitemap a:hover { background-position: -93px -14px; }
+#headerNavUtility li.nav-inquiry a.active, #headerNavUtility li.nav-inquiry a:hover { background-position: -180px -14px; }
+#headerNavUtility li.nav-contact a.active, #headerNavUtility li.nav-contact a:hover { background-position: -250px -14px; }
+#headerNavUtility li.nav-english a.active, #headerNavUtility li.nav-english a:hover { background-position: -343px -14px; }
+#headerTMain, #headerMain { margin: 0px auto; width: 960px; height: 80px; background-color: rgb(255, 255, 255); text-align: left; }
+#headerMain { margin: -10px auto 0px; width: 960px; height: 80px; background-color: rgb(255, 255, 255); text-align: left; }
+#headerMenuButton { display: none; }
+#headerCategory { margin: 0px auto; padding: 0px; height: 180px; width: 100%; background: rgb(0, 0, 0) url('category_bg.jpg') no-repeat scroll 50% 0px; }
+.career #headerCategory { margin: 0px auto; padding: 0px; height: 180px; width: 100%; background: rgb(0, 0, 0) url('category_bg_005.jpg') no-repeat scroll 50% 0px; }
+#headerCategory p { width: 960px; margin: 0px auto; text-align: left; }
+#headerCategory p img { margin-top: 60px; }
+#headerCategory #sp-logo { display: none; }
+#headerLogo { width: 240px; float: left; }
+#headerLogo p { margin: 0px; padding: 18px 0px 0px; display: block; }
+#headerNavGlobal { width: 720px; float: right; }
+#headerNavGlobal ul { margin: 0px; padding: 0px; list-style: outside none none; }
+#headerNavGlobal li { display: block; overflow: hidden; text-indent: -9999px; float: left; height: 80px; }
+#headerNavGlobal li a { display: block; height: 80px; background-image: url('navglobal.gif'); background-repeat: no-repeat; overflow: hidden; margin: 0px; padding: 0px; width: 144px; }
+#headerNavGlobal li.nav-intro a { background-position: 0px 0px; }
+#headerNavGlobal li.nav-exam a { background-position: -144px 0px; }
+#headerNavGlobal li.nav-teacher a { background-position: -288px 0px; }
+#headerNavGlobal li.nav-campus a { background-position: -432px 0px; }
+#headerNavGlobal li.nav-career a { background-position: -576px 0px; }
+#headerNavGlobal li.nav-intro a.active, #headerNavGlobal li.nav-intro a:hover { background-position: 0px -80px; }
+#headerNavGlobal li.nav-exam a.active, #headerNavGlobal li.nav-exam a:hover { background-position: -144px -80px; }
+#headerNavGlobal li.nav-teacher a.active, #headerNavGlobal li.nav-teacher a:hover { background-position: -288px -80px; }
+#headerNavGlobal li.nav-campus a.active, #headerNavGlobal li.nav-campus a:hover { background-position: -432px -80px; }
+#headerNavGlobal li.nav-career a.active, #headerNavGlobal li.nav-career a:hover { background-position: -576px -80px; }
+.career #headerNavGlobal li.nav-career a { background-position: -576px -160px; }
+#Contents { background-color: rgb(255, 255, 255); }
+#Contents #ContentsInner { margin: 0px auto; padding-top: 15px; width: 960px; background-color: rgb(255, 255, 255); text-align: left; }
+#Contents #ContentsInner #TopicsPath { color: rgb(33, 33, 33); font-size: 80%; }
+#Contents #ContentsInner #TopicsPath li { float: left; }
+#Contents #ContentsInner #TopicsPath li a { display: block; background: transparent url('com_topicspath_arrow.png') no-repeat scroll right center; padding-right: 15px; margin-right: 10px; color: rgb(33, 33, 33); }
+#Contents #ContentsInner article { width: 720px; padding-top: 15px; float: right; background: rgb(255, 255, 255) none repeat scroll 0% 0%; overflow: hidden; }
+#Contents #ContentsInner article h1 { border-top: 3px solid rgb(10, 151, 134); border-bottom: 1px dotted rgb(153, 153, 153); padding: 45px 20px; margin-bottom: 20px; color: rgb(17, 17, 17); font-size: 200%; font-weight: bold; }
+#Contents #ContentsInner article p { padding-top: 1.5em; }
+ul.table { display: table; padding: 0px ! important; margin: 20px 0px 0px ! important; table-layout: fixed; width: 100%; }
+ul.table li { display: table-cell; padding: 0px; margin: 0px; list-style-type: none; }
+#Contents #ContentsInner article ul { padding-top: 1.5em; padding-left: 1em; margin-left: 1em; list-style-type: disc; }
+#Contents #ContentsInner article ul li { list-style-type: disc; }
+#Contents #ContentsInner aside { width: 210px; padding-top: 15px; margin-right: 30px; float: left; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+#NavLocal { background-color: rgb(10, 151, 134); padding-bottom: 3px; }
+#NavLocal li a { color: rgb(17, 17, 17); background-color: rgb(255, 255, 255); border-bottom: 1px dotted rgb(51, 51, 51); display: block; font-size: 100%; margin: 0px 3px; padding: 12px 20px 12px 17px; }
+#NavLocal li.active a, #NavLocal li.active a:hover, #NavLocal li a:hover { background: rgb(220, 240, 238) url('com_ico_arrow_normal.png') no-repeat scroll 96% 50%; }
+#NavLocal #NavLocalTop a { color: rgb(255, 255, 255); background-color: rgb(10, 151, 134); display: block; font-size: 140%; font-weight: bold; margin: 0px; border: medium none; padding: 15px 10px 15px 17px; }
+#NavLocal li a:hover { text-decoration: none; background-color: rgb(220, 240, 238); }
+footer { margin-top: 30px; }
+footer #footerInner { border-top: 3px solid rgb(231, 231, 231); }
+#footerInner #NavFooter { background-color: rgb(242, 242, 242); padding: 30px 0px; margin-bottom: 30px; text-align: center; }
+#footerInner #NavFooter ul {  }
+#footerInner #NavFooter ul li { display: inline; border-right: 1px solid rgb(73, 73, 73); padding-right: 14px; margin-right: 15px; }
+#footerInner #NavFooter ul li.last { border-right: medium none; padding-right: 0px; margin-right: 0px; }
+#footerInner #NavFooter ul li a { color: rgb(17, 17, 17); font-size: 93%; }
+#footerInner #NavFooter #address { margin-top: 30px; line-height: 1.4; }
+#footerInner #NavUniv { margin: 30px auto 0px; display: table; }
+#footerInner #NavUniv li { display: table-cell; text-align: center; vertical-align: middle; }
+#footerInner #NavUniv a { margin: 0px 30px; }
+#pageTop { bottom: 15px; position: fixed; right: 15px; z-index: 9000; }
+#Contents #ContentsInner article h1 { border-top: 3px solid rgb(0, 147, 129); }
+#NavLocal { background-color: rgb(0, 147, 129); }
+#NavLocal #NavLocalTop a { background-color: rgb(0, 147, 129); }
+.career #Contents #ContentsInner article h1 { border-top: 3px solid rgb(0, 48, 191); }
+.career #NavLocal { background-color: rgb(0, 48, 191); }
+.career #NavLocal #NavLocalTop a { background-color: rgb(0, 48, 191); }
+.career #NavLocal li.active a, .career #NavLocal li.active a:hover, .career #NavLocal li a:hover { background-image: url('com_ico_arrow_career.png'); background-color: rgb(219, 226, 247); }
+:focus { outline: medium none; }
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/themes/gsc-theme/common/css/responsive.css ::::: */
+
+@media screen and (max-width: 600px) {
+	#headerInner { border-bottom: medium none; }
+	#headerSub { display: none ! important; }
+	#headerLogo { width: 100%; text-align: center; }
+	#headerNavGlobal { display: none ! important; }
+	#Contents { padding: 0px 10px; }
+	#Contents #ContentsInner { width: 100%; padding-top: 0px; }
+	#footerInner #NavFooter ul li a { font-size: 80%; }
+	#NavUniv { width: 100%; }
+	#NavUniv li { padding: 15px; }
+	#NavUniv li a { margin: 0px ! important; }
+	#NavUniv li img { width: 100%; }
+	#headerMain { display: none ! important; }
+	#headerCategory { height: 70px; border-bottom: 5px solid rgb(0, 147, 129); background-size: auto 70px; }
+	.career #headerCategory { height: 70px; border-bottom: 5px solid rgb(0, 48, 191); background-size: auto 70px; }
+	#headerCategory p { width: 100%; display: none; text-align: left; }
+	#headerCategory #sp-logo { display: block; padding-left: 10px; width: 200px; float: left; }
+	#headerCategory #sp-logo img { margin-top: 10px; }
+	#headerMenuButton { display: block; width: 50px; margin-top: 10px; padding-right: 10px; float: right; }
+	#headerMenuButton { position: absolute; z-index: 1000; right: 0px; }
+	#TopicsPath { display: none ! important; }
+	#Contents #ContentsInner article { width: 100%; padding-top: 0px; }
+	#Contents #ContentsInner article h1 { border-top: medium none ! important; border-bottom: 1px dotted rgb(153, 153, 153); padding: 20px 0px; font-size: 130%; }
+	#Contents #ContentsInner aside { width: 100%; }
+	#NavLocal {  }
+	#pageTop img { width: 30px; }
+	#Contents #ContentsInner article ul.table { display: block; }
+	#Contents #ContentsInner article ul.table li { display: inline-block; padding: 10px; }
+}
+/* ::::: http://www.gsc.aoyama.ac.jp/wp-content/themes/gsc-theme/common/css/jquery.sidr.dark.css ::::: */
+
+.sidr { display: none; position: fixed; top: 0px; height: 100%; z-index: 999999; width: 260px; overflow-y: auto; font-family: "lucida grande",tahoma,verdana,arial,sans-serif; font-size: 15px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; color: rgb(255, 255, 255); box-shadow: 0px 0px 5px 5px rgb(34, 34, 34) inset; }
+.sidr.right { left: auto; right: -260px; }
+.sidr ul { display: block; margin: 0px 0px 15px; padding: 0px; border-top: 1px solid rgb(26, 26, 26); border-bottom: 1px solid rgb(77, 77, 77); text-align: left; font-size: 80%; }
+.sidr ul li { display: block; margin: 0px; line-height: 48px; border-top: 1px solid rgb(77, 77, 77); border-bottom: 1px solid rgb(26, 26, 26); }
+.sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active { border-top: medium none; line-height: 49px; }
+.sidr ul li:hover > a, .sidr ul li:hover > span, .sidr ul li.active > a, .sidr ul li.active > span, .sidr ul li.sidr-class-active > a, .sidr ul li.sidr-class-active > span { box-shadow: 0px 0px 15px 3px rgb(34, 34, 34) inset; }
+.sidr ul li a, .sidr ul li span { padding: 0px 15px; display: block; text-decoration: none; color: rgb(255, 255, 255); }
+#sidr { display: none; }
+@media screen and (max-width: 600px) {
+}
